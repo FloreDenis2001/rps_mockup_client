@@ -1,0 +1,203 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 30%;
+  height: 40rem;
+  border-radius: 2rem;
+  border: 1px solid rgba($color-grey-dark, $alpha: 0.3);
+  box-shadow: 0 0 1rem rgba($color-grey-dark, 0.3);
+  padding-bottom: 0.2rem;
+  position: relative;
+  background-color: $color-white;
+
+  @include respond(big-desktop) {
+    max-width: 30rem;
+  }
+
+  &__image {
+    display: grid;
+    place-items: center;
+    width: 100%;
+
+    &__obj {
+      display: block;
+      width: 80%;
+      height: 20rem;
+    }
+  }
+
+  &__info {
+    padding: 1rem;
+
+    &__title {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      font-family: $font-family-secondary;
+      height: 6.3rem;
+      overflow:hidden;
+    }
+
+    &__price {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: $color-primary;
+      font-family: $font-family-secondary;
+      font-weight: 600;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__icons {
+      display: flex;
+      gap: 1rem;
+
+      &__icon {
+        font-size: 1.8rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $color-secondary;
+        }
+
+        &__buy {
+          font-size: 1.8rem;
+          color: $color-white;
+
+          &hover {
+            color: $color-white;
+          }
+
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+
+      &__iconFav {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: $color-grey-dark;
+        font-size: 2rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $color-red;
+        }
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+    &__button {
+      width: 60%;
+      height: 4rem;
+      border: none;
+      background: $color-primary;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5rem;
+      transition: all 0.3s;
+
+      &:hover {
+        background: $color-secondary;
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 5rem;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-white;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 3rem;
+      font-family: $font-family-secondary;
+      margin-bottom: 2rem;
+      border-bottom: 0.3rem solid $color-primary;
+    }
+
+    p {
+      position: relative;
+      color: $color-black;
+      font-size: 1.5rem;
+      text-decoration: none;
+      padding-block: 1rem;
+      letter-spacing: 0.1rem;
+      font-weight: 600;
+      padding: 0;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0.3rem;
+        left: -0.2rem;
+        bottom: -0.5rem;
+        background-color: $color-primary;
+        transition: 0.5s;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+
+    &__reverse{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+    }
+
+    &__poster {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      img {
+        display: block;
+        height: 83rem;      }
+
+      @include respond(tab-land) {
+        display: none;
+      }
+    }
+
+    &__main {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+}

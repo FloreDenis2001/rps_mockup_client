@@ -1,0 +1,51 @@
+.search {
+  display: flex;
+  width: 100%;
+
+  flex-direction: row;
+  box-shadow: 0 0.5rem 1rem rgba($color-grey-dark, 0.2);
+  &__select{
+    padding-right: 1.4rem;
+   display: flex;
+   width: 40%;
+
+   align-items: center;
+    border: 1px solid $color-white-2;
+  }
+  select {
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    border: none;
+    color: $color-grey-dark;
+    background-color: $color-white;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input {
+    padding: 1rem;
+    width: 80%;
+    border: 1px solid $color-white-2;
+    font-size: 1.4rem;
+    color: $color-grey-dark;
+    background-color: $color-white;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    width: 6rem;
+    height: 5rem;
+    border: none;
+    font-size: 1.6rem;
+    color: $color-white;
+    background:$color-primary;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+}

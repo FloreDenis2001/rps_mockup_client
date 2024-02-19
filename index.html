@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a4fb4fc945.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>RPS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="home">
+      <header id="header">
+        <section class="header__info">
+          <div class="header__info__left">
+            <div class="header__info__left__item">
+              <i class="fas fa-envelope"></i>
+              <p>Informativ</p>
+            </div>
+
+            <div class="header__info__left__item">
+              <i class="fas fa-phone"></i>
+
+              <p>Contactați-ne</p>
+            </div>
+            <div class="header__info__left__item">
+              <i class="fas fa-question-circle"></i>
+
+              <p>Intrebări Frecvente</p>
+            </div>
+          </div>
+
+          <div class="header__info__right">
+            <div class="header__info__right__item">
+              <div class="header__info__right__item__iconBox">
+                <i class="fas fa-code-compare"></i>
+
+                <span>0</span>
+              </div>
+              <p>Comparație</p>
+            </div>
+
+            <div class="header__info__right__item">
+              <div class="header__info__right__item__iconBox">
+                <i class="fas fa-heart"></i>
+
+                <span>0</span>
+              </div>
+              <p>Favorite</p>
+            </div>
+
+            <div class="header__info__right__item">
+              <p>Autentificare/Înregistrare</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="header__general">
+          <div class="header__general__left">
+            <img src="./assets/logo5.svg" alt="logo" />
+          </div>
+          <div class="header__general__center">
+            <ul class="header__general__center__menu">
+              <li class="header__general__center__menu__item">
+                <a href="#home">Acasa</a>
+              </li>
+              <li class="header__general__center__menu__item">
+                <a href="#about">Shop</a>
+              </li>
+
+              <li class="header__general__center__menu__item">
+                <a href="#products">Servicii</a>
+              </li>
+
+              <li class="header__general__center__menu__item">
+                <a href="#services">Despre</a>
+              </li>
+
+              <li class="header__general__center__menu__item">
+                <a href="#blog">Blog</a>
+              </li>
+
+              <li class="header__general__center__menu__item">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__general__right">
+            <div class="header__general__right__item">
+              <p>Oferta Speciala</p>
+            </div>
+            <div class="header__general__right__item">
+              <div class="header__general__right__item_icon">
+                <i class="fa-brands fa-facebook-f header__general__icon"></i>
+              </div>
+              <div class="header__general__right__item_icon">
+                <i class="fa-brands fa-x-twitter header__general__icon"></i>
+              </div>
+
+              <div class="header__general__right__item_icon">
+                <i class="fa-brands fa-instagram header__general__icon"></i>
+              </div>
+
+              <div class="header__general__right__item_icon">
+                <i class="fa-brands fa-linkedin-in header__general__icon"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="header__category">
+          <div class="header__category__dropdown" onclick="toggleDropdown()">
+            <div class="header__category__dropdown__title">
+              <i class="fa fa-bars header__category__icon"></i>
+
+              <p>RĂSFOIȚI CATEGORII</p>
+              <i class="fa fa-caret-down header__category__icon"></i>
+
+           
+            </div>
+            <div class="header__category__dropdown__content">
+              <ul>
+                <li>
+                  <div class="header__category__dropdown__content__item">
+                    <h4>APARATE DE SUDURĂ</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="header__category__dropdown__content__item">
+                    <h4>COMPRESOARE DE AER</h4>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="header__category__dropdown__content__item">
+                    <h4>ECHIPAMENTE DE CURĂȚAT</h4>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="header__category__dropdown__content__item">
+                    <h4>ECHIPAMENTE EDILITARE</h4>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="header__category__dropdown__content__item">
+                    <h4>ECHIPAMENTE TERMICE</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="header__category__dropdown__content__item">
+                    <h4>GENERATOARE DE CURENT</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="header__category__dropdown__content__item">
+                    <h4>POMPE ȘI HIDROFOARE</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="header__category__dropdown__content__item">
+                    <h4>GENERATOARE ELECTRICE</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="header__category__dropdown__content__item">
+                    <h4>GENERATOARE ELECTRICE</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="header__category__right">
+            <div class="header__category__right__top">
+              <div class="header__category__right__topLeft">
+                <div class="search">
+                  <div class="search__select">
+                    <select name="categories" id="search__cateogries">
+                      <option value="0" selected disabled>
+                        Selecteaza categoria
+                      </option>
+                      <option value="1">Categorie 1</option>
+                      <option value="2">Categorie 2</option>
+                      <option value="3">Categorie 3</option>
+                      <option value="4">Categorie 4</option>
+                    </select>
+                  </div>
+                  <input type="text" placeholder="Cauta" />
+
+                  <button>
+                    <i class="fa fa-search header__info__icon"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="header__category__right__topRight">
+                <div class="header__category__right__topRight__item">
+                  <i class="fa fa-phone header__category__icon__bag"></i>
+
+                  <div class="header__category__right__topRight__item__content">
+                    <span>Suport 24/7</span>
+                    <p>0758 551 552</p>
+                  </div>
+                </div>
+                <div class="header__category__right__topRight__item">
+                  <i class="fa fa-shopping-bag header__category__icon__bag"></i>
+
+                  <div class="header__category__right__topRight__item__content">
+                    <span>0.00 LEI</span>
+                    <p>0 articole</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__category__right__toCenter">
+              <img
+                src="./assets/bannerHeader.png"
+                class="header__category__right__toCenter__img"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <section class="products">
+        <div class="products__header">
+          <h2>Utilaje pentru construcții</h2>
+          <p>Mai multe articole →</p>
+        </div>
+
+        <div class="products__container">
+          <div class="products__container__poster">
+            <img
+              src="./assets/debitatorSale.png"
+              class="products__container__poster__img"
+            />
+          </div>
+          <div class="products__container__main">
+       
+          
+          
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/masinataiat.png"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Masina de taiat si indoit fier beton GMS MAX40 (400V)
+                </p>
+                <p class="product__info__price">27.500 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+
+
+
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/Disc-diamant-expert-700-mm.png"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Disc diamantat EXPERT ptr. beton armat / materiale dure
+                </p>
+                <p class="product__info__price">3.050 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+
+
+
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/Barikell.png"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Masina de taiat si indoit fier beton GMS MAX40 (400V)
+                </p>
+                <p class="product__info__price">56.500 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/masina-de-curatat-panori-la-paolina_12095_1_1673937680651.png"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Masina de curatat panouri LA PAOLINA
+                </p>
+                <p class="product__info__price">21.975 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/HUSQVARNA-WSC-40-1.png"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Masina de taiat ziduri HUSQVARNA WSC 40
+                </p>
+                <p class="product__info__price">70.000 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/schela-protec-xxl-1-2-x-2m-aluminiu-inaltime-lucru-12-3m-inaltime-max-platforma-10-3m-1.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Schela Protec XXL 1,2 x 2m, aluminiu, inaltime lucru 12,3m
+                </p>
+                <p class="product__info__price">26.206 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="products__header">
+          <h2>Echipamente de curățat</h2>
+          <p>Mai multe articole →</p>
+        </div>
+
+        <div class="products__container__reverse">
+          <div class="products__container__poster">
+            <img
+              src="./assets/debitatorSale.png"
+              class="products__container__poster__img"
+            />
+          </div>
+          <div class="products__container__main">
+       
+          
+          
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/aparatdespalatmic.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Aparat de spalat cu presiune Kranzle QUADRO 899 TST
+                </p>
+                <p class="product__info__price">10.350 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+
+
+
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/mpx210tho_1_1_1.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Aparat de spalat cu presiune Michelin MPX240THO
+                </p>
+                <p class="product__info__price">4.150 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+
+
+
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/aparatdespalatmare.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Aparat de spalat cu presiune Kranzle QUADRO 1000 TST
+                </p>
+                <p class="product__info__price">12.898 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/csm_vce33l_ac_49dd9bf8bb-300x300.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Aspirator profesional umed uscat Flex VCE 44 L AC-Se
+                </p>
+                <p class="product__info__price">3.493 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/aspiratoralbastru.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Aspirator profesional umed/uscat Nilfisk ALTO_ATTIX961-01EU
+                </p>
+                <p class="product__info__price">5.390 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/produs1.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Aspirator profesional umed uscat Flex VCE 44 M AC-Set
+                </p>
+                <p class="product__info__price">4.115 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="products">
+        <div class="products__header">
+          <h2>Generatoare electrice</h2>
+          <p>Mai multe articole →</p>
+        </div>
+
+        <div class="products__container">
+          <div class="products__container__poster">
+            <img
+              src="./assets/debitatorSale.png"
+              class="products__container__poster__img"
+            />
+          </div>
+          <div class="products__container__main">
+       
+          
+          
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/Hyundai-40-kVA-cu-automatizare.png"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Generator de curent trifazat, insonorizat, cu motor diesel HYUNDAI DHY15L
+                </p>
+                <p class="product__info__price">27.300 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+
+
+
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/Hyundai-40-kVA-cu-automatizare.png"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Generator de curent trifazat, insonorizat, cu motor diesel HYUNDAI DHY20L
+                </p>
+                <p class="product__info__price">26.980 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+
+
+
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/Hyundai-40-kVA-cu-automatizare.png"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Generator de curent trifazat, insonorizat, cu motor diesel HYUNDAI DHY25L
+                </p>
+                <p class="product__info__price">31.200 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/Hyundai-40-kVA-cu-automatizare.png"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Generator de curent trifazat, insonorizat, cu motor diesel HYUNDAI DHY40L
+                </p>
+                <p class="product__info__price">39.580 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/combinarosie.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Generator de curent trifazat AGT 8603 HSBE, HONDA
+                </p>
+                <p class="product__info__price">8.300 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/combinaalbastra.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Generator inverter AGT 8000i-E, Putere max. 7,5 kW, 230V
+                </p>
+                <p class="product__info__price">9.400 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="products">
+        <div class="products__header">
+          <h2>Compresoare de aer</h2>
+          <p>Mai multe articole →</p>
+        </div>
+
+        <div class="products__container__reverse">
+          <div class="products__container__poster">
+            <img
+              src="./assets/debitatorSale.png"
+              class="products__container__poster__img"
+            />
+          </div>
+          <div class="products__container__main">
+       
+          
+          
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/compresor-cu-piston-profesional-tip-new-ab500-1050f.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Compresor cu piston, profesional tip NEW-AB500/1050F, 500 litri, 10 bar
+                </p>
+                <p class="product__info__price">11.750 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+
+
+
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/compresoralbastru.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Compresor de aer Airmaster AIR27010-10, 7.5 kW, 10 bar, 1269 l/min, butelie 270 litri
+                </p>
+                <p class="product__info__price">3.050 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+
+
+
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/compresor-cu-surub-chicago-pneumatic-cpm-10d-10-bar-400v-rezervor-500l-75kw-.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Compresor cu șurub Chicago Pneumatic, 1000l/min, 10 bar, 7.5kW, 400V, butelie 500L
+                </p>
+                <p class="product__info__price">46.500 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/MICHELIN-MCX-270.png"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Compresor cu piston MICHELIN MCX300/808, Pmax 10 bar, Qasp 1150 l/min
+                </p>
+                <p class="product__info__price">7.870 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/v91ni92fnm801_1.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Compresor de aer cu surub Fini PLUS 15-13-500 ES, 400 V, 500 l, 15 kW, 13 bar, 1500 l/min
+                </p>
+                <p class="product__info__price">42.975 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img
+                  class="product__image__obj"
+                  src="assets/bplc601fnm870_1.jpg"
+                  alt="produs"
+                />
+              </div>
+
+              <div class="product__info">
+                <p class="product__info__title">
+                  Compresor de aer Fini MK113-200-4, 200 l, 3 kW, 10 bar, 500 l/min
+                </p>
+                <p class="product__info__price">4.950 lei</p>
+              </div>
+
+              <div class="product__actions">
+                <button class="product__actions__button">
+                  <i
+                    class="fa-solid fa-cart-shopping product__actions__icons__icon__buy"
+                  ></i>
+                </button>
+
+                <div class="product__actions__icons">
+                  <i
+                    class="fa-solid fa-code-compare product__actions__icons__icon"
+                  ></i>
+                  <i
+                    class="fa-solid fa-search product__actions__icons__icon"
+                  ></i>
+                </div>
+              </div>
+
+              <i
+                class="fa-solid fa-heart product__actions__icons__iconFav"
+                icon="{faHeart}"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="informativ">
+
+
+        <div class="informativ__item">
+          <div class="informativ__item__image">
+
+              <i class="fa fa-truck informativ__icon"></i>
+
+          </div>
+          <div class="informativ__item__context">
+            <h3>Transport Gratuit</h3>
+            <p>Transport gratuit pentru toate comenzile</p>
+          </div>
+        </div>
+  
+        <div class="informativ__item">
+          <div class="informativ__item__image">
+            <i class="fa fa-rotate-left informativ__icon"></i>
+          </div>
+          <div class="informativ__item__context">
+            <h3>Retur Gratuit</h3>
+            <p>Retur gratuit in 30 de zile</p>
+          </div>
+        </div>
+  
+        <div class="informativ__item">
+          <div class="informativ__item__image">
+            <i class="fa fa-credit-card informativ__icon"></i>
+        
+          </div>
+          <div class="informativ__item__context">
+            <h3>Metoda Plata</h3>
+            <p>Plata la livrare in numerar sau cu cardul</p>
+          </div>
+        </div>
+  
+        <div class="informativ__item">
+          <div class="informativ__item__image">
+            <i class="fa fa-headset informativ__icon"></i>
+       
+          </div>
+          <div class="informativ__item__context">
+            <h3>Asistenta 24/7</h3>
+            <p>Serviciu de asistenta nelimitat !</p>
+          </div>
+        </div>
+      </section>
+
+
+      <footer class="footer">
+        <div class="footer__logo">
+          <img src="./assets/logo5.svg" alt="logo" />
+          <div class="footer__content">
+            <div class="footer__section">
+              <h4>Despre Noi</h4>
+              <p>
+                RPS este membră a Rețelei Naționale Partener – rețea de
+                distribuție și service scule și echipamente profesionale, cu
+                tradiție și experiență de peste 10 de ani în piață.
+              </p>
+            </div>
+  
+            <div class="footer__section">
+              <h4>Top Category</h4>
+              <ul>
+                <li>
+                  <a href="#">APARATE DE SUDURĂ</a>
+                </li>
+                <li>
+                  <a href="#">COMPRESOARE DE AER</a>
+                </li>
+                <li>
+                  <a href="#">ECHIPAMENTE DE CURĂȚAT</a>
+                </li>
+                <li>
+                  <a href="#">ECHIPAMENTE EDILITARE</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="footer__section">
+              <h4>Contact</h4>
+              <p>Simțiți-vă liber să luați legătura.</p>
+              <p>Email: rps@gmail.com</p>
+              <p>Phone: 123-456-7890</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                Companie
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                Contact
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                Politica de confidențialitate
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                Termeni
+              </a>
+            </li>
+          </ul>
+  
+          <p class="footer__copyright">
+            Design for
+            <a href="#" class="footer__link">
+              RPS
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+// // ABSTRACTS 
+
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+// //BASE 
+
+@import "base/base";
+
+
+// // COMPONENTS 
+
+
+@import "components/headerGeneral";
+@import "components/headerCategory";
+@import "components/search";
+@import "components/headerInfo";
+@import "components/product";
+@import "components/informativ";
+
+
+
+
+// // LAYOUT
+@import "layout/header";
+@import "layout/footer";
+
+
+// // PAGES 
+
+
