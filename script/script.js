@@ -6,7 +6,7 @@ function toggleDropdown() {
 
 function toggleDropdownMobile() {
   var dropdownContent = document.getElementById("dropdownContent");
-  if (dropdownContent.style.display === "block") {
+  if (dropdownContent.style.display === "block" || dropdownContent.style.display === "") {
     dropdownContent.style.display = "none";
   } else {
     dropdownContent.style.display = "block";
@@ -15,7 +15,8 @@ function toggleDropdownMobile() {
 
 window.onclick = function(event) {
   var dropdownContent = document.getElementById("dropdownContent");
-  if (dropdownContent.style.display === "block" && !event.target.matches('.headerMobile__dropdown__content')) {
+  if (!event.target.closest('.headerMobile__dropdown')) {
     dropdownContent.style.display = "none";
   }
 };
+
