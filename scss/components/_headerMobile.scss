@@ -13,6 +13,7 @@
   &__cart {
     position: relative;
     &__content {
+
       position: absolute;
       top: -1rem;
       right: -1rem;
@@ -21,7 +22,7 @@
       color: $color-white;
       width: 2rem;
       height: 2rem;
-      display: grid;
+      display: none;
       place-items: center;
     }
   }
