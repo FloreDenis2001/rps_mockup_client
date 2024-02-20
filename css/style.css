@@ -739,6 +739,7 @@ p {
   color: #ffffff;
 }
 .headerMobile__dropdown__container__visible {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
