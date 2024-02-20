@@ -13,7 +13,7 @@
   &__cart {
     position: relative;
     &__content {
-
+        
       position: absolute;
       top: -1rem;
       right: -1rem;
@@ -22,7 +22,7 @@
       color: $color-white;
       width: 2rem;
       height: 2rem;
-      display: none;
+      display: grid;
       place-items: center;
     }
   }
@@ -56,6 +56,7 @@
 
     &__container {
       &__visible {
+        display: none;
         position: fixed;
         left: 0;
         top: 0;
