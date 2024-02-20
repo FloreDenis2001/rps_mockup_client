@@ -36,7 +36,11 @@ body {
     height: auto;
     margin-inline:5%;
     @include respond(big-desktop){
-        margin-inline:8%;
+        margin-inline:12%;
+    }
+
+    @include respond(tab-land){
+        margin-inline: 2%;
     }
    
 }

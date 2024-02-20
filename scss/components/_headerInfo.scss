@@ -3,7 +3,9 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba($color-grey-dark,0.3);
-
+    @include respond(tab-land) {
+      display: none;
+    }
 
     &__left {
       display: flex;
@@ -16,15 +18,18 @@
         text-transform: uppercase;
         color: $color-grey-dark;
         border-right: 1px solid rgba($color-grey-dark, $alpha: .3);
-
+        cursor: pointer;
         gap: 1rem;
         align-items: center;
         justify-content: center;
         padding: 1.6rem;
 
+
         &:hover{
           color: $color-grey-light;
         }
+
+      
       }
     }
 
@@ -47,6 +52,7 @@
         text-transform: uppercase;
         color: $color-grey-dark;
         border-left: 1px solid rgba($color-grey-dark, $alpha: .3);
+        cursor: pointer;
 
         &:hover{
           color: $color-grey-light;

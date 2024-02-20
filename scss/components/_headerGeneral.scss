@@ -4,6 +4,11 @@
     gap: 2rem;
     justify-content: space-between;
     margin-block: 1rem;
+
+    @include respond(tab-land) {
+      display: none;
+    }
+
     &__logo {
       height: 10rem;
       width: 30rem;
